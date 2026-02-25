@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PP Auto-system | Premium Smart Solutions</title>
+    <title>PPLUX | Premium Auto-systems</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
@@ -27,15 +27,7 @@
         }
 
         * { box-sizing: border-box; scroll-behavior: smooth; }
-
-        body {
-            margin: 0;
-            font-family: var(--body-font);
-            background-color: var(--dark);
-            color: var(--light);
-            line-height: 1.8;
-            -webkit-font-smoothing: antialiased;
-        }
+        body { margin: 0; font-family: var(--body-font); background-color: var(--dark); color: var(--light); line-height: 1.8; -webkit-font-smoothing: antialiased; }
 
         /* --- Navigation --- */
         nav {
@@ -56,34 +48,15 @@
             font-size: 2.2rem;
             color: var(--gold);
             text-decoration: none;
-            line-height: 1;
             display: flex;
             align-items: center;
         }
 
-        .nav-links {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
-
+        .nav-links { list-style: none; display: flex; align-items: center; margin: 0; padding: 0; }
         .nav-links li { position: relative; margin-left: 10px; }
-
-        .nav-links a {
-            color: var(--light);
-            text-decoration: none;
-            padding: 10px 15px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-
+        .nav-links a { color: var(--light); text-decoration: none; padding: 10px 15px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
         .nav-links a:hover { color: var(--gold); }
 
-        /* Dropdown Menu */
         .dropdown-content {
             display: none;
             position: absolute;
@@ -91,31 +64,18 @@
             left: 0;
             background-color: var(--gray);
             min-width: 220px;
-            box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
             border: 1px solid #333;
-            border-radius: 4px;
+            box-shadow: 0px 15px 30px rgba(0,0,0,0.5);
             padding: 10px 0;
         }
 
-        .dropdown-content a {
-            text-transform: none;
-            display: block;
-            padding: 12px 20px;
-        }
-
         .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { text-transform: none; display: block; padding: 12px 20px; }
 
-        .nav-btn {
-            border: 1px solid var(--gold);
-            padding: 10px 25px !important;
-            margin-left: 20px;
-            color: var(--gold) !important;
-            border-radius: 2px;
-        }
-
+        .nav-btn { border: 1px solid var(--gold); padding: 10px 25px !important; margin-left: 20px; color: var(--gold) !important; }
         .nav-btn:hover { background: var(--gold); color: var(--dark) !important; }
 
-        /* --- Hero Section --- */
+        /* --- Hero --- */
         .hero {
             height: 85vh;
             display: flex;
@@ -132,72 +92,36 @@
         .hero h1 {
             font-family: var(--heading-font);
             font-size: clamp(2.5rem, 8vw, 4.5rem);
-            margin-bottom: 20px;
             font-weight: 800;
             background: linear-gradient(to right, #fff, var(--gold));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .btn {
-            background: var(--gold);
-            color: var(--dark);
-            padding: 18px 45px;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.4s;
-            display: inline-block;
-        }
+        .btn { background: var(--gold); color: var(--dark); padding: 18px 45px; text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; transition: 0.4s; display: inline-block; }
 
-        /* --- Services Grid --- */
-        .services {
-            padding: 100px 10%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--gray);
-            padding: 50px 30px;
-            text-align: center;
-            border: 1px solid #222;
-            transition: 0.4s;
-            text-decoration: none;
-            color: inherit;
-        }
-
+        /* --- Services --- */
+        .services { padding: 100px 10%; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: var(--gray); padding: 50px 30px; text-align: center; border: 1px solid #222; transition: 0.4s; text-decoration: none; color: inherit; }
         .card:hover { border-color: var(--gold); transform: translateY(-10px); }
         .card i { font-size: 2.5rem; color: var(--gold); margin-bottom: 25px; }
 
-        /* --- Our Story Section --- */
-        .about-section {
-            padding: 120px 10%;
-            background-color: #0a0a0a;
-            display: flex;
-            justify-content: center;
-        }
-
-        .about-container { max-width: 850px; text-align: center; }
+        /* --- Sections --- */
+        .about-section { padding: 120px 10%; background-color: #0a0a0a; text-align: center; }
         .subtitle { color: var(--gold); text-transform: uppercase; letter-spacing: 4px; font-size: 0.8rem; font-weight: 700; display: block; margin-bottom: 15px; }
-        .quote { font-style: italic; font-size: 1.5rem; color: var(--gold); margin: 30px 0; font-weight: 300; }
-        .story-text p { font-size: 1.1rem; color: #aaa; margin-bottom: 25px; line-height: 2; }
-
-        /* --- Contact --- */
+        .quote { font-style: italic; font-size: 1.5rem; color: var(--gold); margin: 30px 0; }
+        
         .contact-section { padding: 100px 10%; text-align: center; }
         .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 50px; }
         .contact-info i { color: var(--gold); font-size: 1.5rem; margin-bottom: 10px; }
 
-        footer { text-align: center; padding: 60px; font-size: 0.75rem; color: #555; border-top: 1px solid #222; text-transform: uppercase; }
-
+        footer { text-align: center; padding: 60px; font-size: 0.75rem; color: #555; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html" class="logo">PP Auto-system</a>
+        <a href="index.html" class="logo">PPLUX</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
@@ -216,7 +140,7 @@
 
     <section class="hero">
         <h1>Automating Your Future</h1>
-        <p>Premium Electric Gates, Intelligent Smart Homes, and Solar Solutions.</p>
+        <p>Premium Electric Gates, Intelligent Smart Homes, and Solar Solutions by PPLUX.</p>
         <a href="#about" class="btn">Discover Our Story</a>
     </section>
 
@@ -244,15 +168,10 @@
     </section>
 
     <section id="about" class="about-section">
-        <div class="about-container">
-            <span class="subtitle">Heritage & Innovation</span>
-            <h2>A Legacy in the Making</h2>
-            <p class="quote">"Precision in every system, passion in every partnership."</p>
-            <div class="story-text">
-                <p>Founded by <strong>Phoo</strong> and <strong>Praew</strong>, "PP" represents more than just our names; it represents a commitment to building a life and a legacy together.</p>
-                <p>Starting this journey together, we treat every installation as if it were for our own home, ensuring quality that lasts a lifetime.</p>
-            </div>
-        </div>
+        <span class="subtitle">Heritage & Innovation</span>
+        <h2>A Legacy in the Making</h2>
+        <p class="quote">"Precision in every system, passion in every partnership."</p>
+        <p style="color:#aaa; max-width:800px; margin:0 auto;">Founded by Phoo and Praew, PPLUX represents a commitment to building a life and a legacy together.</p>
     </section>
 
     <section id="contact" class="contact-section">
@@ -260,14 +179,11 @@
         <div class="contact-grid">
             <div class="contact-info"><i class="fas fa-envelope"></i><p>inthatwork@gmail.com</p></div>
             <div class="contact-info"><i class="fas fa-phone"></i><p>+66 63 240 1224</p></div>
-            <div class="contact-info"><i class="fas fa-map-marker-alt"></i><p>Bangkok, Thailand</p></div>
         </div>
         <a href="mailto:inthatwork@gmail.com" class="btn">Send a Message</a>
     </section>
 
-    <footer>
-        <p>&copy; EST.2026. BY PHOO & PRAEW.</p>
-    </footer>
+    <footer>&copy; EST.2026. PPLUX BY PHOO & PRAEW.</footer>
 
 </body>
 </html>
